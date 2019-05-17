@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:fontFamily="sans-serif-black"
+        android:hint="Поиск"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <ListView
+        android:id="@+id/movies_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search"
+        android:background="#f7f7f7" />
+
+</RelativeLayout>
